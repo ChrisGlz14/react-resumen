@@ -18,20 +18,19 @@ export const PrimerComponente = ( {titulo, subtitulo, numero}) => {
 }
 
 // SIMULA TYPESCRIPT
-PrimerComponente.PropTypes = {
+// PrimerComponente.PropTypes = {
 
-    titulo: PropTypes.string.isRequired,
-    subtititulo : PropTypes.string.isRequired,
-    numero : PropTypes.number.isRequired
+//     titulo: PropTypes.string.isRequired,
+//     subtititulo : PropTypes.string.isRequired,
+//     numero : PropTypes.number.isRequired
 
-}
-
-
-PrimerComponente.defaultProps = {
-
-    // Podrian HABER PROPS DEFAULT
-
-}
+// }
 
 
-// EVENTOS
+// PrimerComponente.defaultProps = {
+
+//     // Podrian HABER PROPS DEFAULT
+
+// }
+
+

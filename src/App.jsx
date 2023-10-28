@@ -11,11 +11,9 @@ function App() {
     <>
 
 
-      <PrimerComponente titulo = "ESTE ES UNA PROPS" subtitulo="Curso de Sergi CODE" numero = {7}/>
+    <PrimerComponente titulo = "ESTE ES UNA PROPS" subtitulo="Curso de Sergi CODE" numero = {7}/>
 
     <AgregarTarea/>
-
-    <PrimerComponente titulo = "ESTE ES UNA PROPS" subtitulo="Curso de Sergi CODE" numero = {7}/>
 
     <ListadoLibros />
 

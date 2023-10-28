@@ -16,12 +16,12 @@ export const AgregarTarea = () => {
     <form onSubmit={onSubmit}>
       
       {/* Estos atributos son llamados properties y tiene un event listener con una funcion llamada onInputChange*/}
-      <input
+      {/* <input
         type="text"
         placeholder="Escriba una tarea"
         value={inputValue}
         onChange={onInputChange}
-      />
+      /> */}
       
       </form>
     </>

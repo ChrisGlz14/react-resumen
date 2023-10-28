@@ -12,7 +12,7 @@ export const AñadirLibro = ({añadirLibro}) => {
   const onSubmit = (event) => {
     
     event.preventDefault();
-    // El hijo recibe añadirLibro que es la propertie que realmente es una funcion, y a traves del spread operator para sumar la infomacion
+    // El hijo recibe añadirLibro que es una propertie y a su vez es una funcion, y a traves del spread operator para sumar la infomacion.
     
     añadirLibro(inputValue)
     // Sabemos que emite bien el hijo hacia el padre y el padre hace el console.log

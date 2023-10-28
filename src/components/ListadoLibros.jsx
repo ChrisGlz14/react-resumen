@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AñadirLibro } from "./AñadirLibro";
+import libros from './LibrosArray'
 
 const Items = ({ titulo, autor, año }) => {
   return (
@@ -12,7 +13,7 @@ const Items = ({ titulo, autor, año }) => {
 };
 
 const ListadoLibros = () => {
-  // Para Añadir un libros, utilizamos onclick (Line 65), ademas el spreed operator (line17) junto con use state para que pinte en pantalla los cambios
+  // Para Añadir un libros, utilizamos onclick (Line 65), ademas el spreed operator (line18) junto con use state para que pinte en pantalla los cambios
   const añadirLibro = () => {
     setarreglo([
       ...arreglo,
@@ -81,6 +82,7 @@ const ListadoLibros = () => {
       {/* onInputChange es lo que le mandamos desde el Padre */}
 
       <AñadirLibro añadirLibro={onAgregarLibro}></AñadirLibro>
+      <button onClick={() => añadirLibro()}>Añadir Libro</button>
 
       <ol>
         {arreglo.map((item) => (
@@ -93,7 +95,6 @@ const ListadoLibros = () => {
         ))}
       </ol>
 
-      <button onClick={() => añadirLibro()}>Añadir Libro</button>
     </>
   );
 };

@@ -12,6 +12,18 @@ const Items = ({ titulo, autor, año }) => {
 };
 
 const ListadoLibros = () => {
+  // Para Añadir un libros, utilizamos onclick (Line 65), ademas el spreed operator (line17) junto con use state para que pinte en pantalla los cambios
+  const añadirLibro = () => {
+    setarreglo([
+      ...arreglo,
+      {
+        titulo: "El principito",
+        autor: "C. Gonzalez",
+        año: 2045,
+      },
+    ]);
+  };
+
   let libros = [
     {
       id : 0,
@@ -71,15 +83,23 @@ const ListadoLibros = () => {
       <AñadirLibro añadirLibro={onAgregarLibro}></AñadirLibro>
 
       <ol>
+<<<<<<< Updated upstream
         {arreglo.map((item) => (
           <Items
             key={item.id}
+=======
+        {arreglo.map((item, index) => (
+          <Items
+            key={index}
+>>>>>>> Stashed changes
             titulo={item.titulo}
             autor={item.autor}
             año={item.año}
           />
         ))}
       </ol>
+
+      <button onClick={() => añadirLibro()}>Añadir Libro</button>
     </>
   );
 };

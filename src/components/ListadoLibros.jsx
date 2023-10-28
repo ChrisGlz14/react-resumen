@@ -83,15 +83,9 @@ const ListadoLibros = () => {
       <AñadirLibro añadirLibro={onAgregarLibro}></AñadirLibro>
 
       <ol>
-<<<<<<< Updated upstream
         {arreglo.map((item) => (
           <Items
             key={item.id}
-=======
-        {arreglo.map((item, index) => (
-          <Items
-            key={index}
->>>>>>> Stashed changes
             titulo={item.titulo}
             autor={item.autor}
             año={item.año}
